@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prévia dos climas · Painel do Tablet</title>
+<style>
+  :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+  body { margin: 0; background: #111923; color: #f4f7fa; }
+  main { max-width: 1480px; margin: auto; padding: clamp(16px, 3vw, 36px); }
+  h1 { margin: 0 0 10px; font-size: clamp(26px, 3vw, 40px); }
+  p { color: #c9d6df; margin: 0 0 28px; line-height: 1.5; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 24px; }
+  figure { margin: 0; background: #243241; border: 1px solid #536779; border-radius: 18px; overflow: hidden; }
+  video { display: block; width: 100%; aspect-ratio: 16 / 10; background: #1b2631; }
+  figcaption { padding: 15px 18px 18px; font-size: 19px; font-weight: 650; }
+  small { display: block; margin-top: 4px; color: #afc2d0; font-size: 14px; font-weight: 400; }
+</style>
+<main>
+  <h1>Veja os climas no tablet</h1>
+  <p>Toque em reproduzir para ver o movimento. A temperatura, o gráfico e a agenda são exemplos; o céu e as animações são os do aplicativo.</p>
+  <div class="grid">
+    <figure><video controls loop muted playsinline preload="metadata" poster="nublado.png"><source src="nublado.mp4" type="video/mp4"></video><figcaption>Nublado<small>Referência cinza, inclusive à noite</small></figcaption></figure>
+    <figure><video controls loop muted playsinline preload="metadata" poster="sol.png"><source src="sol.mp4" type="video/mp4"></video><figcaption>Ensolarado<small>Brilho suave e nuvens altas</small></figcaption></figure>
+    <figure><video controls loop muted playsinline preload="metadata" poster="parcialmente-nublado.png"><source src="parcialmente-nublado.mp4" type="video/mp4"></video><figcaption>Parcialmente nublado<small>Sol entre as nuvens</small></figcaption></figure>
+    <figure><video controls loop muted playsinline preload="metadata" poster="chuva.png"><source src="chuva.mp4" type="video/mp4"></video><figcaption>Chuva<small>Nuvens e gotas em movimento</small></figcaption></figure>
+    <figure><video controls loop muted playsinline preload="metadata" poster="neblina.png"><source src="neblina.mp4" type="video/mp4"></video><figcaption>Neblina<small>Camadas claras deslizando pelo céu</small></figcaption></figure>
+    <figure><video controls loop muted playsinline preload="metadata" poster="neve.png"><source src="neve.mp4" type="video/mp4"></video><figcaption>Neve<small>Flocos em diferentes profundidades</small></figcaption></figure>
+    <figure><video controls loop muted playsinline preload="metadata" poster="tempestade.png"><source src="tempestade.mp4" type="video/mp4"></video><figcaption>Tempestade<small>Chuva e relâmpago distante; clipe de 16 segundos</small></figcaption></figure>
+    <figure><video controls loop muted playsinline preload="metadata" poster="noite-limpa.png"><source src="noite-limpa.mp4" type="video/mp4"></video><figcaption>Noite limpa<small>Lua e estrelas cintilando</small></figcaption></figure>
+  </div>
+</main>
+</html>

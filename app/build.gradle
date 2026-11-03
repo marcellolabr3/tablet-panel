@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace = 'br.com.paineltablet'
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = 'br.com.paineltablet'
+        minSdk = 19          // Android 4.4: mantido de proposito, e o sistema do tablet
+        targetSdk = 28
+        versionCode = 7
+        versionName = '1.6'
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['-Xlint:-options']
+}
